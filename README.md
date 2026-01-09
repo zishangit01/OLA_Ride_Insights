@@ -111,18 +111,17 @@ Power BI dashboards provide visual insights on:
 ✔ The report is published on Power BI Service  
 ✔ Dashboard screenshots are shown inside Streamlit for quick reference
 
+
 ## 📁 Repository Structure
 
-```
 OLA_Ride_Insights/
 │
-├── app.py                       # Streamlit application
-├── ola_sql_business_logic.sql   # SQL views & KPI logic
-├── images/                      # Power BI dashboard screenshots
-├── powerbi/                     # Power BI (.pbix) file
-├── reports/                     # End-to-end project report (PDF)
-├── data/                        # Dataset (if applicable)
-```
+├── app.py # Streamlit application
+├── ola_sql_business_logic.sql # SQL views & KPI logic
+├── images/ # Power BI dashboard screenshots
+├── powerbi/ # Power BI (.pbix) file
+├── reports/ # End-to-end project report (PDF)
+├── data/ # Dataset (if applicable)
 
 ## 🚀 Outcome
 
