@@ -34,16 +34,13 @@ To design and implement a **complete end-to-end analytics solution** that:
 
 ## 🏗️ Project Architecture
 
-PostgreSQL (Raw Ride Data)
-↓
-SQL Views & Business KPIs
-↓
-Power BI Dashboards
-↓
-Streamlit Web Application
-
-yaml
-Copy code
+PostgreSQL (Raw Ride Data)  
+↓  
+SQL Views & Business KPIs  
+↓  
+Power BI Dashboards  
+↓  
+Streamlit Web Application  
 
 This architecture ensures:
 - High performance
@@ -71,7 +68,7 @@ This architecture ensures:
 5. Who are the top customers by ride frequency?
 6. How satisfied are customers and drivers across vehicle types?
 
-Each question is answered using a combination of:
+Each question is answered using:
 **SQL Views + Power BI Visuals + Streamlit Live Outputs**
 
 ---
@@ -85,48 +82,15 @@ All KPIs are calculated at the **database level** using SQL views to ensure:
 - Consistency across tools
 
 ### Example: Total Successful Bookings
+
 ```sql
 CREATE OR REPLACE VIEW vw_total_successful_bookings AS
 SELECT COUNT(*) AS total_successful_bookings
 FROM rides
 WHERE UPPER(TRIM(booking_status)) = 'SUCCESS';
-SQL views act as a single source of truth for both Power BI and Streamlit.
 
-📊 Live SQL Outputs (Streamlit)
-The Streamlit application connects directly to PostgreSQL and displays:
 
-Total successful bookings
 
-Customer cancellations
-
-Total revenue (₹)
-
-Payment method usage
-
-Top 5 customers by rides
-
-These metrics are fetched live from the database.
-
-📈 Power BI Business Dashboards
-Power BI dashboards provide visual insights on:
-
-Overall booking performance
-
-Vehicle type comparison
-
-Revenue & payment trends
-
-Cancellation breakdown (customer & driver)
-
-Driver & customer ratings
-
-⚠ Live Power BI embedding is restricted due to organizational tenant policy.
-✔ The report is published on Power BI Service
-✔ Screenshots are included for quick visual reference inside Streamlit
-
-📁 Repository Structure
-powershell
-Copy code
 OLA_Ride_Insights/
 │
 ├── app.py                       # Streamlit application
@@ -135,27 +99,3 @@ OLA_Ride_Insights/
 ├── powerbi/                     # Power BI (.pbix) file
 ├── reports/                     # Project report (PDF)
 ├── data/                        # Dataset (if applicable)
-🚀 Outcome
-This project demonstrates:
-
----
-
-## 🔗 Project Links
-
-- 📊 Power BI Dashboard (Service):  
-  https://app.powerbi.com/groups/me/reports/932fd5d0-11cf-40f1-91a2-4258be3e49cb
-
-- 🧑‍💻 Streamlit App (Local Demo):  
-  Run `streamlit run app.py`
-
-- 🗄 SQL Business Logic:  
-  `ola_sql_business_logic.sql`
-
-- 📄 End-to-End Business Report:  
-  `reports/OLA_Ride_Insights_End_to_End_Analytics_Report.pdf`
-
-
-👤 Author
-Zishan Alam
-Aspiring Data Analyst
-📍 Bangalore, India
