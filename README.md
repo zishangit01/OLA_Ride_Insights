@@ -138,15 +138,22 @@ OLA_Ride_Insights/
 🚀 Outcome
 This project demonstrates:
 
-Strong SQL & database fundamentals
+---
 
-Business-oriented problem solving
+## 🔗 Project Links
 
-Dashboard storytelling using Power BI
+- 📊 Power BI Dashboard (Service):  
+  https://app.powerbi.com/groups/me/reports/932fd5d0-11cf-40f1-91a2-4258be3e49cb
 
-End-to-end analytics project ownership
+- 🧑‍💻 Streamlit App (Local Demo):  
+  Run `streamlit run app.py`
 
-✅ Industry-aligned | Internship-ready | Interview-ready
+- 🗄 SQL Business Logic:  
+  `ola_sql_business_logic.sql`
+
+- 📄 End-to-End Business Report:  
+  `reports/OLA_Ride_Insights_End_to_End_Analytics_Report.pdf`
+
 
 👤 Author
 Zishan Alam
