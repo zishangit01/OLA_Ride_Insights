@@ -151,8 +151,7 @@ This project demonstrates:
 ## 👤 Author
 
 **Zishan Alam**  
-Aspiring Data Analyst  
-📍 Bangalore, India
+
 
 
 
